@@ -13,7 +13,7 @@ export const runTool = async (
 
   switch (toolCall.function.name) {
     case 'get_weather':
-      return getWeather()
+      return getWeather(input)
     default:
       throw new Error(`Unknown tool: ${toolCall.function.name}`)
   }
